@@ -1,4 +1,5 @@
 import nltk
+import os
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
@@ -36,7 +37,7 @@ def transform_text(text):
 
     return " ".join(y)
 
-
+print(os.listdir())
 tk = pickle.load(open("vectorizer.pkl", 'rb'))
 model = pickle.load(open("model.pkl", 'rb'))
 

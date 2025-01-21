@@ -38,8 +38,8 @@ def transform_text(text):
     return " ".join(y)
 
 print(os.listdir())
-tk = pickle.load(open("vectorizer.pkl", 'rb'))
-model = pickle.load(open("model.pkl", 'rb'))
+tk = pickle.load(open("./vectorizer.pkl", 'rb'))
+model = pickle.load(open("./model.pkl", 'rb'))
 
 st.title("SMS Spam Detection Model")
 st.write("*Made by Edunet Foundation*")
